@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Create two function one that caches the result of the matrix inversion 
+## and another that actually performs the calculation. If the matrix-result is cached the calculation is skipped.
 
-## Write a short comment describing this function
+## Code that caches a matrix. Returns a list 
+## that sets the matrix, gets the matrix, sets
+## the result of the inverse of the matrix, 
+## gets the result fo the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
@@ -19,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Take input of a square matrix it calculates the inverse of this matrix.
+## if the results exists/cached it picks up that results, else it performs
+## the calculation.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
